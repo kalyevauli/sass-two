@@ -1,0 +1,11 @@
+@mixin btn{
+  padding: 13px 25px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+}
+@mixin  center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

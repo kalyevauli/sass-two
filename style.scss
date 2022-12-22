@@ -1,0 +1,237 @@
+@import "globol";
+@import "mixin";
+@import "variables";
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+
+  .navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    &--nav {
+      padding-left: 25px;
+
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        padding: 0 27px;
+      }
+    }
+  }
+}
+  #hero{
+    background: url("/img/diver2.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+  .hero{
+    padding-top: 150px;
+    h1{
+      padding-top: 193px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      span{
+        color: #FF9900;
+      }
+    }
+    p{
+      padding:39px 0 89px 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      span{
+        color: orange;
+      }
+    }
+    &--btn{
+      display: flex;
+      &__one{
+        padding: 13px 27px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        background: #FF9900;
+        border-radius: 60px 0 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-icon{
+          padding-left: 15px;
+          font-size: 25px;
+        }
+      }
+      &__two{
+        padding: 13px 27px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        background: none;
+        border-radius: 0 60px 60px 0;
+        border: 2px solid #FF9900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ion-icon{
+          padding-left: 15px;
+          font-size: 25px;
+        }
+      }
+    }
+
+  }
+  #our{
+    padding: 40px 0;
+    background: url("/img/nice.png") no-repeat center/cover;
+    .our{
+      &--title{
+        h1{
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+      }
+      &--block{
+        background: radial-gradient(100% 100% at 0% 0%, rgba(99, 99, 99, 0.58) 0%, rgba(99, 99, 99, 0.58) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        h3{
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 15px;
+          padding: 10px 0;
+          color: #FFFFFF;
+        }
+        h1{
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+          margin-top: 80px;
+        }
+        p{
+          width: 185px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 20px 40px;
+        }
+        &__input{
+          display: flex;
+          align-items: center;
+       justify-content: center;
+          h2{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+
+          }
+        }
+        &__text{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h2{
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+          button{
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #FF9900;
+            padding: 7px 15px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      &--img{
+        width: 193px;
+        height: 193px;
+        bottom: 350px;
+        z-index: 1;
+        position: absolute;
+      }
+
+
+    }
+  }
+  #cook{
+    padding: 40px 0;
+    background: black;
+    .cook {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--title {
+        h1 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFFFFF;
+        }
+      }
+
+      &--logo {
+        .dev {
+          display: flex;
+          justify-content: space-between;
+
+        }
+
+        &__img {
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__circle {
+          position: relative;
+          margin-top: 30px;
+          width: 118px;
+          height: 118px;
+          background: #282626;
+          border-radius: 50%;
+
+          img {
+            margin-left: 20px;
+            margin-top: 20px;
+          }
+        }
+
+        &__circle-2 {
+          position: relative;
+          margin-top: 30px;
+          width: 118px;
+          height: 118px;
+          background: #282626;
+          border-radius: 50%;
+        }
+      }
+    }
+
