@@ -2,6 +2,7 @@
 @import "mixin";
 @import "variables";
 
+//header-start
 #header {
   position: fixed;
   width: 100%;
@@ -25,68 +26,84 @@
     }
   }
 }
-  #hero{
+//header-end
+
+//hero-start
+  #hero {
     background: url("/img/diver2.png") no-repeat center/cover;
     min-height: 100vh;
-  }
-  .hero{
-    padding-top: 150px;
-    h1{
-      padding-top: 193px;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 44px;
-      color: #FFFFFF;
-      span{
-        color: #FF9900;
-      }
-    }
-    p{
-      padding:39px 0 89px 0;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #FFFFFF;
-      span{
-        color: orange;
-      }
-    }
-    &--btn{
-      display: flex;
-      &__one{
-        padding: 13px 27px;
-        font-weight: 600;
-        font-size: 18px;
-        color: #FFFFFF;
-        background: #FF9900;
-        border-radius: 60px 0 0 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ion-icon{
-          padding-left: 15px;
-          font-size: 25px;
-        }
-      }
-      &__two{
-        padding: 13px 27px;
-        font-weight: 600;
-        font-size: 18px;
-        color: #FFFFFF;
-        background: none;
-        border-radius: 0 60px 60px 0;
-        border: 2px solid #FF9900;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ion-icon{
-          padding-left: 15px;
-          font-size: 25px;
-        }
-      }
-    }
 
+    .hero {
+      padding-top: 150px;
+
+      h1 {
+        padding-top: 193px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+
+        span {
+          color: #FF9900;
+        }
+      }
+
+      p {
+        padding: 39px 0 89px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+
+        span {
+          color: orange;
+        }
+      }
+
+      &--btn {
+        display: flex;
+
+        &__one {
+          padding: 13px 27px;
+          font-weight: 600;
+          font-size: 18px;
+          color: #FFFFFF;
+          background: #FF9900;
+          border-radius: 60px 0 0 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          ion-icon {
+            padding-left: 15px;
+            font-size: 25px;
+          }
+        }
+
+        &__two {
+          padding: 13px 27px;
+          font-weight: 600;
+          font-size: 18px;
+          color: #FFFFFF;
+          background: none;
+          border-radius: 0 60px 60px 0;
+          border: 2px solid #FF9900;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          ion-icon {
+            padding-left: 15px;
+            font-size: 25px;
+          }
+        }
+      }
+
+    }
   }
+  //hero-end
+
+//our-start
   #our{
     padding: 40px 0;
     background: url("/img/nice.png") no-repeat center/cover;
@@ -173,65 +190,501 @@
 
     }
   }
-  #cook{
-    padding: 40px 0;
-    background: black;
-    .cook {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  //our-end
 
-      &--title {
-        h1 {
+//cook-start
+#cook {
+  padding: 40px 0;
+  background: black;
+  .cook{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--logo{
+      position: relative;
+      &__time{
+        width: 118px;
+        height: 118px;
+        background: #282626;
+        border-radius: 50%;
+       @include center();
+        position: absolute;
+        top: -65px;
+        left: 177px;
+        z-index: 2;
+
+      }
+      &__two{
+        width: 118px;
+        height: 118px;
+        background: #282626;
+        border-radius: 50%;
+        @include center();
+        position: absolute;
+        top: 53px;
+        left: -60px;
+        z-index: 2;
+
+      }
+      &__three{
+        width: 118px;
+        height: 118px;
+        background: #282626;
+        border-radius: 50%;
+        @include center();
+        position: absolute;
+        top: 320px;
+        left: -10px;
+        z-index: 2;
+
+      }
+      &__four{
+        width: 118px;
+        height: 118px;
+        background: #282626;
+        border-radius: 50%;
+        @include center();
+        position: absolute;
+        top: 50px;
+        left: 370px;
+        z-index: 2;
+
+      }
+      &__five{
+        width: 142px;
+        height: 142px;
+        background: #FF9900;
+        border-radius: 50%;
+        @include center();
+        position: absolute;
+        top: 320px;
+        left: 299px;
+        div{
+          width: 114px;
+          height: 114px;
+          background: #282626;
+          @include center();
+          border-radius: 50%;
+          z-index: 2;
+        }
+      }
+      &__img{
+        position: relative;
+        z-index: 1;
+      }
+    }
+    &--title{
+      h1{
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+      h2{
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+      &__block{
+        margin: 20px 0;
+        display: flex;
+        width: 280px;
+        height:35px;
+        border-bottom: 2px solid #FF9900;
+       &--one{
+         margin-left: 20px;
+         div{
+           width: 13px;
+           height: 0;
+           border: 1px solid #FF9900;
+           transform: rotate(90deg);
+         }
+       }
+      }
+      p{
+        width: 360px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}
+//cook-end
+
+//aura-start
+#aura{
+  padding: 40px 0;
+  background: url("/img/resto.png")no-repeat center/cover;
+  min-height: 100vh;
+  .aura{
+    h1{
+      padding-top: 80px;
+      font-weight: 600;
+      font-size: 24px;
+      color: #FF9900;
+      padding-bottom: 30px;
+    }
+    &--logo{
+      input{
+        color: #FF9900;
+        background: none;
+        border: none;
+        width: 343px;
+        height: 38px;
+      }
+      h2{
+        font-weight: 400;
+        font-size: 12px;
+        color: #FF9900;
+      }
+      div{
+        width: 343px;
+        height: 38px;
+        border: 1px solid #FF9900;
+
+      }
+    }
+    &--title{
+      input{
+        color: #FF9900;
+        background: none;
+        border: none;
+        width: 343px;
+        height: 32px;
+      }
+      h2{
+        padding-top: 24px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FF9900;
+      }
+      div{
+        width: 343px;
+        height: 32px;
+        border: 1px solid #FF9900;
+      }
+    }
+    &--part{
+      display: flex;
+      &__group{
+        h2{
+          padding-top: 24px;
+          padding-left: 10px;
+          font-weight: 400;
+          font-size: 12px;
+          color: #FF9900;
+
+        }
+        &--square{
+          width: 147px;
+          height: 47px;
+          border: 1px solid #FF9900;
+        }
+        input{
+          width: 147px;
+          height: 47px;
+          border: none;
+          background: none;
+          color: #FF9900;
+        }
+        h3{
+          padding-top: 24px;
+          font-weight: 400;
+          font-size: 12px;
+          color: #FF9900;
+          padding-left: 45px;
+        }
+        &--square{
+          &__two{
+            width: 147px;
+            height: 47px;
+            margin-left: 45px;
+            border: 1px solid #FF9900;
+            input{
+              width: 147px;
+              height: 47px;
+              border: none;
+              background: none;
+              color: #FF9900;
+            }
+          }
+        }
+      }
+
+    }
+    &--square{
+      h2{
+        font-weight: 400;
+        font-size: 12px;
+        padding-top: 24px;
+        color: #FF9900;
+      }
+      div{
+        width: 343px;
+        height: 88px;
+        border: 1px solid #FF9900;
+      }
+      input{
+        width: 343px;
+        height: 88px;
+        background: none;
+        border: none;
+        color: #FF9900;
+      }
+    }
+    button{
+      margin-top: 30px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      width: 250px;
+      height: 51px;
+      background: #FF9900;
+      border-radius: 20px;
+      &:hover{
+        transform: scale(1.1);
+        background: none;
+        color: #FF9900;
+      }
+    }
+  }
+
+}
+//aura-end
+
+//review-start
+#review{
+  padding: 40px 0;
+  background: url("/img/limon.png") no-repeat center/cover;
+  min-height: 100vh;
+  .review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--logo{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        span{
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+
+        }
+      }
+      p{
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF;
+        width: 375px;
+      }
+      button{
+        margin: 40px 0;
+        font-weight: 600;
+        font-size: 36px;
+        color: #FFFFFF;
+        border: 1px solid #FF9900;
+        border-radius: 60px;
+        padding: 13px 30px;
+        background: none;
+        &:hover{
+          transform: scale(1.1);
+          background: #FF9900;
+          color: #282626;
+        }
+      }
+    }
+    &--square{
+      margin-top: 40px;
+      width: 500px;
+      height: 571px;
+      background: radial-gradient(100% 100% at 0% 33.19%, rgba(126, 126, 126, 0.46) 0%, rgba(114, 112, 112, 0.46) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      backdrop-filter: blur(5px);
+      border-radius: 60px;
+      &__two{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1{
           font-weight: 600;
-          font-size: 24px;
-          line-height: 29px;
+          font-size: 18px;
           color: #FFFFFF;
         }
-
-        p {
+        p{
+          padding: 20px 0;
           font-weight: 400;
           font-size: 12px;
           line-height: 15px;
           color: #FFFFFF;
+          width: 282px;
         }
+        &--icon{
+          font-size: 40px;
+        }
+        ion-icon{
+          color: #FF9900;
+        }
+
       }
-
-      &--logo {
-        .dev {
-          display: flex;
-          justify-content: space-between;
-
+      &__three{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1{
+          font-weight: 600;
+          font-size: 18px;
+          color: #FFFFFF;
         }
-
-        &__img {
-          position: absolute;
-          display: flex;
-          justify-content: space-between;
+        p{
+          font-weight: 400;
+          font-size: 12px;
+          color: #FFFFFF;
+          width: 282px;
+          padding: 20px 0;
         }
-
-        &__circle {
-          position: relative;
-          margin-top: 30px;
-          width: 118px;
-          height: 118px;
-          background: #282626;
+        &--icon{
+          font-size: 40px;
+        }
+        ion-icon{
+          color: #FF9900;
+        }
+        &--art{
+          @include center();
+          width: 73px;
+          height: 73px;
+          background: #FF9900;
           border-radius: 50%;
-
-          img {
-            margin-left: 20px;
-            margin-top: 20px;
-          }
         }
 
-        &__circle-2 {
-          position: relative;
-          margin-top: 30px;
-          width: 118px;
-          height: 118px;
-          background: #282626;
-          border-radius: 50%;
+      }
+    }
+  }
+}
+//review-end
+
+//dream-start
+#dream-two{
+  padding: 40px 0;
+  background: black;
+  .dream-two{
+    ion-icon{
+      margin-left: 100px;
+      color: #FF9900;
+      font-size: 40px;
+    }
+    &--label{
+    }
+   &--tabs{
+     #dream:checked~.table,
+     #dream:checked~.food,
+     #dream:checked~.soul{
+       opacity: .3;
+     }
+     #table:checked~.dream,
+     #table:checked~.food,
+     #table:checked~.soul{
+       opacity: .3;
+     }
+     #food:checked~.dream,
+     #food:checked~.table,
+     #food:checked~.soul{
+       opacity: .3;
+     }
+     #soul:checked~.dream,
+     #soul:checked~.table,
+     #soul:checked~.food{
+       opacity: .3;
+     }
+
+     input{
+       padding-top: 30px;
+       text-align: center;
+         margin-top: 50px;
+         background: white;
+         border-radius: 20px;
+     }
+     img{
+       margin-left: 10px;
+       width: 250px;
+       height: 250px;
+     }
+   }
+
+  }
+}
+//dream-end
+
+//footer-start
+#footer{
+  padding: 40px 0;
+  background: black;
+  .footer{
+    width: 1100px;
+    height: 293px;
+    border: 1px solid #FF9900;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    ion-icon{
+      color: white;
+    }
+    &--logo{
+      &__h1{
+        h1{
+          font-weight: 400;
+          font-size: 18px;
+          color: #FFFFFF;
+          padding: 20px 10px;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+          padding: 30px 0;
+          font-weight: 400;
+          font-size: 18px;
+          color: #FFFFFF;
         }
       }
     }
-
+    img{
+      margin-left: 160px;
+    }
+    &--title{
+      &__two{
+        h1{
+          padding: 20px 10px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__part{
+        h1{
+          padding: 20px 10px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+//footer-end
